@@ -1,3 +1,18 @@
 controllers:
     resource: ../src/Controller/
     type: attribute
+login:
+    path: /login
+    controller: App\Controller\LoginController::login
+
+produit_dashboard:
+    path: /produits
+    controller: App\Controller\ProduitController::dashboard
+
+produit_add:
+    path: /produits/ajouter
+    controller: App\Controller\ProduitController::add
+
+produit_list:
+    path: /produits/liste
+    controller: App\Controller\ProduitController::list
